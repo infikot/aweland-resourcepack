@@ -1,0 +1,87 @@
+{
+  "model": {
+    "type": "select",
+    "property": "display_context",
+    "cases": [
+      {
+        "when": ["gui", "ground", "fixed"],
+        "model": {
+          "type": "model",
+          "model": "aweassault:sniper_rifle/standby",
+          "tints": []
+        }
+      }
+    ],
+    "fallback": {
+      "type": "condition",
+      "property": "using_item",
+      "on_true": {
+        "type": "range_dispatch",
+        "property": "crossbow/pull",
+        "entries": [
+          {
+            "threshold": 0.58,
+            "model": {
+              "type": "model",
+              "model": "aweassault:sniper_rifle/pulling_0",
+              "tints": []
+            }
+          },
+          {
+            "threshold": 1.0,
+            "model": {
+              "type": "model",
+              "model": "aweassault:sniper_rifle/pulling_1",
+              "tints": []
+            }
+          }
+        ],
+        "fallback": {
+          "type": "select",
+          "property": "charge_type",
+          "cases": [
+            {
+              "when": "arrow",
+              "model": {
+                "type": "model",
+                "model": "aweassault:sniper_rifle/arrow",
+                "tints": []
+              }
+            },
+            {
+              "when": "none",
+              "model": {
+                "type": "model",
+                "model": "aweassault:sniper_rifle/pulling_start",
+                "tints": []
+              }
+            }
+          ]
+        }
+      },
+      "on_false": {
+        "type": "select",
+        "property": "charge_type",
+        "cases": [
+          {
+            "when": "arrow",
+            "model": {
+              "type": "model",
+              "model": "aweassault:sniper_rifle/arrow",
+              "tints": []
+            }
+          },
+          {
+            "when": "none",
+            "model": {
+              "type": "model",
+              "model": "aweassault:sniper_rifle/idle",
+              "tints": []
+            }
+          }
+        ]
+      }
+    }
+  },
+  "hand_animation_on_swap": false
+}

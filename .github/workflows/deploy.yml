@@ -14,14 +14,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install Zip
-        run: sudo apt-get install zip
-
       - name: Create ZIP
         run: |
           cd server_pack
           zip -r ../resourcepack.zip .
           cd ..
+
+      - name: Generate SHA-1 Hash
+        run: |
+          sha1sum resourcepack.zip | cut -d ' ' -f 1 > hash.txt
+          echo "New Hash: $(cat hash.txt)"
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
