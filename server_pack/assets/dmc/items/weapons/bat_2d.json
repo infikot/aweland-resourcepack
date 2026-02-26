@@ -1,0 +1,1 @@
+{"model":{"type":"range_dispatch","property":"custom_model_data","entries":[{"threshold":1.0,"model":{"type":"model","model":"dmc:instruments/magnifying_glass","tints":[]}}],"fallback":{"type":"model","model":"dmc:7c3917e4-d9e6-4885-a06c-43c546216961","tints":[]}}}

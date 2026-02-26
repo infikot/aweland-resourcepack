@@ -1,0 +1,1 @@
+{"providers":[{"type":"bitmap","file":"item/coal.png","height":16,"ascent":16,"chars":["▲"]},{"type":"bitmap","file":"dmc:52513a1b-dced-457f-9e18-99a110001d8e.png","height":32,"ascent":24,"chars":["☯"]},{"type":"bitmap","file":"item/netherite_scrap.png","height":16,"ascent":16,"chars":["𓃞"]},{"type":"reference","id":"nexo:shift"}]}

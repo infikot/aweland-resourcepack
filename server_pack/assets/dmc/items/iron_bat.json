@@ -1,0 +1,1 @@
+{"model":{"type":"select","property":"display_context","cases":[{"when":["gui","ground","fixed"],"model":{"type":"model","model":"dmc:f8e1a102-067b-43e1-a285-a95b86d44c42","tints":[]}}],"fallback":{"type":"model","model":"dmc:3282efe4-b241-487c-ae12-a334f3eca3d8","tints":[]}}}

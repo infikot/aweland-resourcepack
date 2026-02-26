@@ -1,0 +1,1 @@
+{"model":{"type":"condition","property":"has_component","component":"minecraft:dyed_color","on_true":{"type":"model","model":"nexo:6b10d9e7-ae60-43c3-97f5-6d3fa27593c7","tints":[{"type":"dye","default":16777215}]},"on_false":{"type":"model","model":"nexo:35a46593-b11b-443c-89d8-d8d12385999a","tints":[]}}}
