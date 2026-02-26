@@ -1,0 +1,1 @@
+{"model":{"type":"condition","property":"using_item","on_true":{"type":"model","model":"nexo:7b709921-b5a3-4fcc-a899-d335e95ff971","tints":[]},"on_false":{"type":"model","model":"nexo:54b045f1-deb5-4f6a-9eb9-39a6f4545ad3","tints":[]}}}

@@ -1,0 +1,1 @@
+{"model":{"type":"select","property":"custom_model_data","cases":[{"when":"bat","model":{"type":"model","model":"item/bat","tints":[]}},{"when":"test","model":{"type":"model","model":"item/diamond_sword","tints":[]}}],"fallback":{"type":"model","model":"item/spyglass_in_hand","tints":[]}}}
